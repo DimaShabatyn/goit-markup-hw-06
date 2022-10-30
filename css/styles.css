@@ -340,6 +340,7 @@ img {
     color: var(--footer-color-text);
     box-shadow: var(--shadow-main-button);
     outline: none;
+    
     transition-property: border-color;
     transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
@@ -761,6 +762,10 @@ img {
 .btn-img {
     display: block;
     fill: var(--logo-color-text);
+
+    transition-property: fill;
+    transition-duration: var(--time-250);
+    transition-timing-function: var(--transition-bezier);
 }
 .btn-close:hover .btn-img,
 .btn-close:focus .btn-img {
@@ -798,10 +803,13 @@ img {
     border: 1px solid var(--input-modal);
     padding: 14px 16px 14px 42px;
     outline: none;
+
+    transition-property: border-color;
+    transition-duration: var(--time-250);
+    transition-timing-function: var(--transition-bezier);
 }
 .modal-input:focus, 
-.modal-textarea:focus, 
-.modal-input-chek:focus {
+.modal-textarea:focus {
     border-color: var(--primary-color-text);
 }
 .logo-modal {
@@ -810,6 +818,10 @@ img {
     left: 15px;
     transform: translateY(-50%);
     fill: var(--main-color-text);
+
+    transition-property: fill;
+    transition-duration: var(--time-250);
+    transition-timing-function: var(--transition-bezier);
 }
 .modal-input:focus + .logo-modal {
     fill: var(--primary-color-text);
@@ -832,16 +844,16 @@ img {
     border: 1px solid var(--input-modal);
     padding: 12px 16px;
     outline: none;
+
+    transition-property: border-color;
+    transition-duration: var(--time-250);
+    transition-timing-function: var(--transition-bezier);
 }
-.form-chek-contrakt {
+.form-check-contrakt {
     color: var(--primary-color-text);
-    text-decoration: underline;
+    text-decoration: underline 1px;
 }
-.user-modal-chek {
-    width: 16px;
-    height: 15px;
-    display: inline-block;
-}
+
 .hero-button-modal {
     display: block;
     padding: 10px 52px;
@@ -867,4 +879,53 @@ img {
 .hero-button-modal:hover,
 .hero-button-modal:focus {
     background-color: var(--active-button);
+    cursor: pointer;
+}
+
+.user-modal-check {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+    margin-top: 20px;
+}
+.modal-input-check {
+    position: absolute;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding: 0;
+    margin: -1px;
+    clip-path: inset(50%);
+}
+.icon-check-custom {
+    display: inline-block; 
+    width: 16px;
+    height: 15px;
+    margin-left: 12px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--footer-color-text);
+    border: 2px solid var(--main-color-text);
+    border-radius: 2px;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: var(--time-250);
+    transition-timing-function: var(--transition-bezier);
+}
+.modal-input-check:checked + .icon-check-custom {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 8px;
+    background-color: var(--primary-color-text);
+    border-radius: 2px;
+    border-color: var(--primary-color-text);
 }

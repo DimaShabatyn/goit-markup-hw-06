@@ -403,13 +403,13 @@
                 <div class="form-field">
                     <label class="user-modal">Коментар</label>
                     <textarea name="feedback" placeholder="Введіть текст" class="modal-textarea"></textarea>
-                </div>
-                <div class="form-field-check">
-                    <input type="checkbox" name="chek-contract" value="yes" class="modal-input-chek" id="user-mail">
-                    <label class="user-modal" for="user-email">Погоджуюся з розсилкою та приймаю  
-                        <a href="#" class="form-chek-contrakt">Умови договору</a>
-                    </label>
-                </div>
+                </div>            
+                <label class="user-modal-check">
+                    <input type="checkbox" name="chek-contract" value="yes" class="modal-input-check">
+                        <svg class="icon-check-custom" width="16" height="15"><use href="./images/icons.svg#icon-icon-check"></use></svg>
+                        <span>Погоджуюся з розсилкою та приймаю
+                        <a href="#" target="_blank" class="form-check-contrakt">Умови договору</a></span>
+                </label>
                 <button type="submit" class="hero-button-modal">Відправити</button>
             </form>
         </div>
