@@ -906,12 +906,8 @@ img {
 }
 .icon-check-custom {
     display: inline-block; 
-    width: 16px;
-    height: 15px;
     margin-left: 12px;
     margin-right: 8px;
-    background-repeat: no-repeat;
-    background-size: contain;
     background-color: var(--footer-color-text);
     border: 2px solid var(--main-color-text);
     border-radius: 2px;
