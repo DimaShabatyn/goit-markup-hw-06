@@ -311,6 +311,7 @@ img {
     border: transparent;
     box-shadow: var(--shadow-main-button);
     width: 200px;
+    margin-left: 9px;
 
     transition-property: background-color;
     transition-duration: var(--time-250);
@@ -758,6 +759,7 @@ img {
     padding: 0;
     cursor: pointer;
     border: 1px solid var(--border-btn);
+    background-color: transparent;
 }
 .btn-img {
     display: block;
@@ -773,7 +775,7 @@ img {
 }
 
 .form-modal {
-    margin-top: 30px;
+    margin-top: 12px;
     display: block;
 }
 .name-form {
@@ -784,15 +786,21 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-color-text);
 }
-.form-field {
+.form-field,
+.form-field-textarea {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+.form-field {
     margin-bottom: 10px;
 }
 .form-field-check {
     margin-top: 20px;
+}
+.form-field-textarea {
+    margin-bottom: 20px;
 }
 
 .modal-input {
@@ -856,7 +864,6 @@ img {
 
 .hero-button-modal {
     display: block;
-    padding: 10px 52px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -865,7 +872,10 @@ img {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    padding: 0;
 
+    width: 200px;
+    height: 50px;
     background-color: var(--primary-color-text);
     border-radius: 4px;
     box-shadow: var(--shadow-main-button);
@@ -885,12 +895,10 @@ img {
 .user-modal-check {
     display: flex;
     align-items: center;
-    margin: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
-    margin-top: 20px;
 }
 .modal-input-check {
     position: absolute;
